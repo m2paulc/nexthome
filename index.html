@@ -12,10 +12,26 @@
         <title>nexthome &mdash; your home, your freedom</title>
     </head>
     <body class="container">
-        <div class="sidebar">
-			<button class="nav-btn"></button>
-        </div>
-		<header class="header">
+        <div class="navigation">
+	      <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
+	      <label for="navigation-toggle" class="navigation__button">
+	        <span class="navigation__icon">&nbsp;</span>
+	      </label>
+	      <div class="navigation__background">&nbsp;</div>
+	      <nav class="navigation__group">
+	        <ul class="navigation__list">
+	          <li class="navigation__item"><a href="#homes-id" class="navigation__link">Find your dream home</a></li>
+			  <li class="navigation__item"><a href="#header-id" class="navigation__link">Request proposal</a></li>
+			  <li class="navigation__item"><a href="#features-id" class="navigation__link">Features</a></li>
+			  <li class="navigation__item"><a href="#gallery-id" class="navigation__link">Submit your property</a></li>
+			  <li class="navigation__item"><a href="#footer-id" class="navigation__link">Contact us</a></li>
+	        </ul>
+	      </nav>
+	    </div>
+   <!--     <div class="sidebar">-->
+			<!--<button class="nav-btn"></button>-->
+   <!--     </div>-->
+		<header class="header" id="header-id">
 			<img src="img/logo.png" alt="nexthome logo" class="header__logo">
 			<h3 class="heading-3">Your own home:</h3>
 			<h1 class="heading-1">The ultimate personal freedom</h1>
@@ -48,7 +64,7 @@
 				</div>
 			</div>
 		</div>
-		<section class="features">
+		<section class="features" id="features-id">
 			<div class="feature">
 				<svg class="feature__icon">
 					<use href="img/sprite.svg#icon-global"></use>
@@ -102,7 +118,7 @@
 			<p class="story__text mb-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!</p>
 			<button class="btn">Find your own home</button>
 		</div>
-		<section class="homes">
+		<section class="homes" id="homes-id">
 			<div class="home">
 				<img src="img/house-1.jpeg" alt="House 1" class="home__img">
 				<svg class="home__icon">
@@ -296,7 +312,7 @@
 				<button class="home__btn btn">Contact Realtor</button>
 			</div>
 		</section>
-		<section class="gallery">
+		<section class="gallery" id="gallery-id">
 			<figure class="gallery__item gallery__item--1">
 				<img src="img/gal-1.jpeg" alt="Gallery image 1" class="gallery__img">
 			</figure>
@@ -340,7 +356,7 @@
 				<img src="img/gal-14.jpeg" alt="Gallery image 14" class="gallery__img">
 			</figure>
 		</section>
-		<footer class="footer">
+		<footer class="footer" id="footer-id">
 			<ul class="nav">
 				<li class="nav__item"><a href="#" class="nav__link">Find your dream home</a></li>
 				<li class="nav__item"><a href="#" class="nav__link">Request proposal</a></li>
@@ -352,5 +368,6 @@
 			<p class="copyright">
 				&copy; Copyright 2018 by Paul Caoile. Based on the original design and project of Jonas Schmedtmann with permission to use for own personal use. All rights reserved by Jonas Schmedtmann.</p>
 		</footer>
+		<script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
