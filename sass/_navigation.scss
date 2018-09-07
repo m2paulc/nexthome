@@ -10,19 +10,14 @@
         width: 7rem;
         border-radius: 50%;
         position: fixed;
-        top: 6rem;
-        right: 6rem;
+        top: 4rem;
+        right: 4rem;
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, .3);
         z-index: 120;
         text-align: center;
         cursor: pointer;
         
         @media only screen and (max-width: $bp-large) {
-            top: 4rem;
-            right: 4rem;
-        }
-          
-        @media only screen and (max-width: $bp-small) {
             top: 3rem;
             right: 3rem;
         }
@@ -33,19 +28,14 @@
         width: 6rem;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
+        top: 4.5rem;
+        right: 4.5rem;
         background-image: radial-gradient($color-primary 0%, goldenrod 60%);
         z-index: 100;
         -webkit-transition: transform 700ms cubic-bezier(0.86, 0, 0.07, 1);
         transition: transform 700ms cubic-bezier(0.86, 0, 0.07, 1);
         
         @media only screen and (max-width: $bp-large) {
-            top: 4.5rem;
-            right: 4.5rem;
-        }
-        
-        @media only screen and (max-width: $bp-small) {
             top: 3.5rem;
             right: 3.5rem;
         }
